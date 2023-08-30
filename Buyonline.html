@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online products.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-primary">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Buy Online</a>
+              <a  href="Buyonline.html"style="color:white;"class="text-decoration-none">Home</a>         
+      </nav>  
+</header>
+<br>
+<div class="container-fluid">
+  <div class="search d-flex"style="justify-content:space-evenly;">
+    <h1>Search</h1>
+ <input type="text" class="form-control w-50" id="find" placeholder="search here" onkeyup="look()">
+</div>
+<br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://www.allrecipes.com/thmb/CjzJwg2pACUzGODdxJL1BJDRx9Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6788-amish-white-bread-DDMFS-4x3-6faa1e552bdb4f6eabdd7791e59b3c84.jpg" width="270px" height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Bread</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1LmFbM0wX6qx1MgXTpJUgRX5GboauwVs9vr39k8tcAxrbXn7x" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Grain</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Turkish_strained_yogurt.jpg/220px-Turkish_strained_yogurt.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Yogurt</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>     </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://i5.walmartimages.com/asr/7ac58499-6e99-46b5-a1a1-094d67562853.d290942467ff25e6ade12b0903efcc93.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF"width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Canned bean</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQxVYNjRXuMPF2QpkKbtu9YWnvWfpB7ZoPgcJ3mIVEde3LZmzZ6gW8RLn4ihySngKkU" width="270px"height="190px" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Milk</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSgHsjX4y7hQT1XDhBxjMjPudyd4DsJHHcXPzFIkPtPZjLeAqY7h5FaBDrpNmpXLiOP" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Meat</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://5.imimg.com/data5/CN/YW/MY-3295167/20-litre-water-can.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Water can</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.britannica.com/61/118661-050-6CAD9A11/Popcorn.jpg" width="270px"height="190px" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Pop corn</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.grofers.com/app/images/products/sliding_image/313400a.jpg?ts=1674802461" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Dairy Milk</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/2019-1/11178-Different_types_of_water_header-1296x728.jpg?w=1155&h=1528" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Waterbottle</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61zSsPTzs6L.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Garden watering</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/71uuNz7BA-L._AC_UF894,1000_QL80_.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Painting brush</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81QobQ9NgEL.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Paste</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://osiamart.com/image/cache/catalog/cold-drinks/VICKS%20VAPORUB%20COLD%20SYMP50%20ml-1500x1500.jpg" width="270px"height="190px" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Vicks</h5>
+        <button type="button" class="btn btn-primary" onclick="ok()">Know more</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class=" fixed container-fluid d-flex" style="background-color: black;color:white">
+  <div class=" container-fluid  row mt-3">
+    <div class="col">
+    <h4>Our Services</h4>
+    <p>online products</p>
+    
+    </div>
+    <div class="col">
+      <h4>Privacy</h4>
+      <p> <a href="" class="text-decoration-none" style="color:white">About us</a> </p>
+      <p>Contact us</p>
+      <p>Terms&Conditions</p>
+    </div>
+  
+    <div class="col">
+      <h4>Follow us</h4>
+      <p ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+        <i href="https://www.facebook.com/">facebook</i></p>
+      <p><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><i>instagram</i></p>
+      <p><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i><i>whatsapp</i></p>
+      <P><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i><i>pinterest</i></P>
+    </div>
+    <div class="col">
+      <p>
+        <h5 style="color:black">
+          <button type="button" class="btn btn-outline-success-rounded" style="color:white" data-bs-toggle="modal" data-bs-target="#contact" data-bs-whatever="@user">
+          <i><h4>Contact us</h4></i></button>         
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="reset7">
+                  <form   name="form">
+                    <div class="mb-3">
+                      <label for="Name" class="form-label">Name</label>
+                      <input type="name" class="form-control" id="username7" >
+                      <div id="idname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email7" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+                    <div class="mb-3">
+                      <label for="Textarea">Comments</label>
+                      <textarea class="form-control" placeholder="Leave a comment here" id="Textarea"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" onclick="contact()" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+        </div></h5>
+      </p>
+    </div>
+    <h4 style="text-align:center;">
+      <a href="Buyonline.html" class="text-decoration-none" style="color:white">Home</a> </h4>
+  </div>
+  
+</div>
+<script src="Buyonline.js"></script>
+</body>
+</html>
