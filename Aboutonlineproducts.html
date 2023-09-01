@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online products.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/c61eb31f26.js"></script> 
+<link rel="stylesheet"href="buy.css">
+</head>
+<body id="body1">
+  <header>
+    <nav class="navbar navbar-dark bg-primary">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Buy Online</a>
+              <a  href="#about"style="color:white;"class="text-decoration-none">About</a>
+              <a class="text-decoration-none ms-auto" style="color: white;">
+                <i class="fa fa-moon-o" aria-hidden="true" id="white"></i></a>  
+              <a  href="index.html"style="color:white;"class="text-decoration-none">Home</a>          
+             
+             
+                     
+      </nav>  
+</header>
+<br>
+<div class="container-fluid">
+  <div class="search d-flex p-3"style="justify-content:center;">
+    <h1>Search</h1>
+ <input type="text" class="form-control w-50 productsearch" id="find" placeholder="search online" >
+ <div></div>
+ <button type="button" class="btn btn-primary search"style="width:150px;" onclick="result()">submit</button>
+</div>
+<br>
+<br>
+<div class="recent" style="font-family:cambria;font-size:x-large">
+    <div class="card">
+        <div class="card-body"  id="acolor">
+          <h5 class="card-title"> <marquee><h3>Follow us</h3></marquee>
+          <p class="card-text">Subscribe and know about more offers</p>
+          <a href="#" class="btn btn-primary" onclick="later()">Subscribe</a>
+        </div>
+      </div>
+</div>
+<br>
+<div class="month" style="font-family:cambria;font-size:x-large">
+  <p><b>Annual Big Sale Events</p>
+    <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+           
+            <a class="list-group-item list-group-item-action" href="#list-item-1">1st Event</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">2nd Event</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">3nd Event</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">4th Event</a>         
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">January</h4>
+            <p><i>special offer for purchase more than 75%.</i></p>
+            <h4 id="list-item-2">March</h4>
+            <p>special offer for purchase more than 550%.</p>
+            <h4 id="list-item-3">May</h4>
+            <p>special offer for purchase more than 35%.</p>
+            <h4 id="list-item-4">July</h4>
+            <p>special offer for purchase more than 50%.</p>
+            
+          </div>
+        </div>
+      </div>
+</div>
+<hr>
+<div id="about" style="font-family:cambria;font-size:x-large;">
+  <h3><b>About us</b></h3>
+  <P>
+   Our   Online shopping is a form of electronic commerce which allows consumers 
+      to directly buy goods or services from a seller over the Internet using a 
+      web browser or a mobile app. Consumers find a product of interest by visiting
+       the website of the retailer directly or by searching among alternative vendors 
+       using a shopping search engine, which displays the same product's availability and
+        pricing at different e-retailers. As of 2020, customers can shop online using a range
+         of different computers and devices, including desktop computers, laptops, tablet computers and smartphones.
+  </P>
+</div>
+<hr>
+<div class="container-fluid" style="font-family:cambria;font-size:x-large">
+  <h3><b>Reviews</b></h3>
+  <P>total 15,000views</P>
+<div class="form-check w-50">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  5-star
+<div class="progress">
+  <div class="progress-bar"role="progressbar"style="width:50%"></div>
+</div>
+</div>
+<div class="form-check w-50">
+  
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  4-star
+  <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
+<div class="form-check w-50">
+  
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+  3-star
+  <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
+<div class="form-check w-50">
+  
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+  2-star
+  <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
+<div class="form-check w-50">
+  
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+  1-star
+  <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+    </div>
+</div>
+</div>
+<br>
+<div class="page">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="Aboutonlineproducts.html">current Page</a></li>
+      
+      <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+    </ul>
+  </div>
+<hr>
+<div class=" fixed container-fluid d-flex" style="background-color: black;color:white;font-family:cambria;font-size:x-large">
+  <div class=" container-fluid  row mt-3">
+    <div class="col">
+    <h4>Our Services</h4>
+    <p href="index.html">online products</p>
+    
+    </div>
+    <div class="col">
+      <h4>Privacy</h4>
+      <p> <a href="#about" class="text-decoration-none" style="color:white">About us</a> </p>
+    
+      <p>Terms&Conditions</p>
+    </div>
+  
+    <div class="col">
+      <h4>Follow us</h4>
+      <p ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+        <a href="https://www.facebook.com/" class="text-decoration-none" style="color:white">facebook</a></p>
+      <p><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <a href="https://www.whatsapp.com/" class="text-decoration-none" style="color:white">Whatsapp</a></p>
+      <p><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+        <a href="https://www.instagram.com/" class="text-decoration-none" style="color:white">instagram</a></p>
+      <P><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i>
+        <a href="https://www.pinterest.com/" class="text-decoration-none" style="color:white">pinterest</a></P>
+    </div>
+    <div class="col">
+      <p>
+        <h5 style="color:black">
+          <button type="button" class="btn btn-outline-success-rounded" style="color:white" data-bs-toggle="modal" data-bs-target="#contact" data-bs-whatever="@user">
+          <i><h4>Contact us</h4></i></button>         
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="reset7">
+                  <form   name="form">
+                    <div class="mb-3">
+                      <label for="Name" class="form-label">Name</label>
+                      <input type="name" class="form-control" id="username7" >
+                      <div id="idname" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email7" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+                    <div class="mb-3">
+                      <label for="Textarea">Comments</label>
+                      <textarea class="form-control" placeholder="Leave a comment here" id="Textarea"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" onclick="contact()" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+        </div>
+        </div></h5>
+      </p>
+    </div>
+    <h4 style="text-align:center;">
+      <a href="index.html" class="text-decoration-none" style="color:white">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        Home</a> </h4>
+  </div>
+  
+</div>
+<script src="Buyonline.js"></script>
+<script>
+    let find = document.querySelector('.productsearch');
+    let result = document.querySelector('.search');
+result=function(){
+  let url="https://www.google.com/search?q="+find.value;
+  window.open(url);
+};
+//for toggle night mode  
+const dark = document.getElementById('white');
+const body=document.body;
+const recent = document.getElementById('acolor');
+dark.addEventListener("click",()=>{
+  body.classList.toggle('white');
+  recent.classList.toggle('white');
+});
+
+</script>
+</body>
+</html>
